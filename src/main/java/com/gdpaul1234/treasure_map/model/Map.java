@@ -46,4 +46,9 @@ public class Map {
     public void addField(Field field) {
         this.fields.add(field);
     }
+
+    @Override
+    public String toString() {
+        return String.format("C - %d - %d", width, height);
+    }
 }
