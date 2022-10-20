@@ -3,7 +3,6 @@ package com.gdpaul1234.treasure_map.model;
 import com.gdpaul1234.treasure_map.enums.Movement;
 import com.gdpaul1234.treasure_map.enums.Orientation;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,6 +31,10 @@ public class Adventurer extends Field {
         this.collectedTreasure = 0;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void move() {
         Movement nextMove = this.moves.remove(0);
 
@@ -50,9 +53,7 @@ public class Adventurer extends Field {
                     }
                 }
             }
-            case G, D -> {
-                this.orientation = getNextOrientation(this.orientation, nextMove);
-            }
+            case G, D -> this.orientation = getNextOrientation(this.orientation, nextMove);
         }
     }
 

@@ -20,8 +20,8 @@ public class Map {
         return width;
     }
 
-    public <T extends Field> List<Field> getFieldOf(Class<T> clazz) {
-        return this.fields.stream()
+    public <T extends Field> List<T> getFieldOf(Class<T> clazz) {
+        return (List<T>) this.fields.stream()
                 .filter(f -> f.getClass() == clazz)
                 .toList();
     }

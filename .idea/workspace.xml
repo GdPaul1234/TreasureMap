@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6e179f9-e1f7-476a-8d25-d644df5fa71e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/The treasure map.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/FileParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/SimulationDumper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/enums/Movement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/enums/Orientation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Adventurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Field.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Mountain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Treasure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/util/MoveHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/gdpaul1234/treasure_map/util/MoveHelperTest.java" afterDir="false" />
+    <list default="true" id="d6e179f9-e1f7-476a-8d25-d644df5fa71e" name="Changes" comment="Map unit tests">
+      <change afterPath="$PROJECT_DIR$/src/test/com/gdpaul1234/treasure_map/model/MapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Adventurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Adventurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,21 +58,62 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.gdpaul1234.treasure_map.model" />
       <recent name="com.gdpaul1234.treasure_map.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MoveHelperTest.whenAdvance_getNextOrientation_ShouldNotChangeOrientation">
-    <configuration name="MoveHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in The treasure map">
+    <configuration name="All in The treasure map" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The treasure map" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The treasure map" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.MoveHelperTest" />
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.MapTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.getFieldAt_ShouldReturnFieldAtGivenPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The treasure map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.MapTest" />
+      <option name="METHOD_NAME" value="getFieldAt_ShouldReturnFieldAtGivenPosition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.getFieldOf_ShouldFilterAdventurerInInsertionOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The treasure map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.MapTest" />
+      <option name="METHOD_NAME" value="getFieldOf_ShouldFilterAdventurerInInsertionOrder" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,61 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MoveHelperTest.whenTreasureOrPlain_canMove_ShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The treasure map" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.MoveHelperTest" />
-      <option name="METHOD_NAME" value="whenTreasureOrPlain_canMove_ShouldReturnTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MoveHelperTest.whenTurnLeft_getNextOrientation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The treasure map" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.MoveHelperTest" />
-      <option name="METHOD_NAME" value="whenTurnLeft_getNextOrientation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MoveHelperTest.whenTurnRight_getNextOrientation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The treasure map" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.MoveHelperTest" />
-      <option name="METHOD_NAME" value="whenTurnRight_getNextOrientation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in The treasure map" />
+        <item itemvalue="JUnit.MapTest" />
+        <item itemvalue="JUnit.MapTest.getFieldAt_ShouldReturnFieldAtGivenPosition" />
+        <item itemvalue="JUnit.MapTest.getFieldOf_ShouldFilterAdventurerInInsertionOrder" />
         <item itemvalue="JUnit.MoveHelperTest.whenAdvance_getNextOrientation_ShouldNotChangeOrientation" />
-        <item itemvalue="JUnit.MoveHelperTest.whenTurnRight_getNextOrientation" />
-        <item itemvalue="JUnit.MoveHelperTest.whenTurnLeft_getNextOrientation" />
-        <item itemvalue="JUnit.MoveHelperTest" />
-        <item itemvalue="JUnit.MoveHelperTest.whenTreasureOrPlain_canMove_ShouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -174,8 +154,16 @@
       <updated>1666252199198</updated>
       <workItem from="1666252205265" duration="8298000" />
       <workItem from="1666261399577" duration="4242000" />
-      <workItem from="1666280406298" duration="3190000" />
+      <workItem from="1666280406298" duration="6145000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit + MoveHelper unit tests">
+      <created>1666284227433</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666284227433</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,5 +179,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit + MoveHelper unit tests" />
+    <MESSAGE value="Map unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Map unit tests" />
   </component>
 </project>
