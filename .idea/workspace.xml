@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e179f9-e1f7-476a-8d25-d644df5fa71e" name="Changes" comment="Map unit tests">
-      <change afterPath="$PROJECT_DIR$/src/test/com/gdpaul1234/treasure_map/model/MapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/gdpaul1234/treasure_map/model/AdventurerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/gdpaul1234/treasure_map/model/TreasureTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Adventurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Adventurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/gdpaul1234/treasure_map/util/MoveHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/gdpaul1234/treasure_map/util/MoveHelperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,16 +64,8 @@
       <recent name="com.gdpaul1234.treasure_map.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in The treasure map">
-    <configuration name="All in The treasure map" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The treasure map" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdventurerTest$describeSimulateAdventurerMovements.whenMultipleMoves_move_ShouldChangePositionAnCollectedTreasuresOfAdventurer">
+    <configuration name="AdventurerTest$describeAdvance.whenTreasure_move_ShouldMoveAndPickUpTreasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The treasure map" />
       <extension name="coverage">
         <pattern>
@@ -79,14 +73,46 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.MapTest" />
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest$describeAdvance" />
+      <option name="METHOD_NAME" value="whenTreasure_move_ShouldMoveAndPickUpTreasure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdventurerTest$describeSimulateAdventurerMovements.whenMultipleMoves_move_ShouldChangePositionAnCollectedTreasuresOfAdventurer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The treasure map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest$describeSimulateAdventurerMovements" />
+      <option name="METHOD_NAME" value="whenMultipleMoves_move_ShouldChangePositionAnCollectedTreasuresOfAdventurer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdventurerTest$describeTurnLeftOrRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The treasure map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest$describeTurnLeftOrRight" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.getFieldAt_ShouldReturnFieldAtGivenPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdventurerTest$describeTurnLeftOrRight.whenTurnLeft_move_ShouldChangeOrientation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The treasure map" />
       <extension name="coverage">
         <pattern>
@@ -94,15 +120,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.MapTest" />
-      <option name="METHOD_NAME" value="getFieldAt_ShouldReturnFieldAtGivenPosition" />
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest$describeTurnLeftOrRight" />
+      <option name="METHOD_NAME" value="whenTurnLeft_move_ShouldChangeOrientation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.getFieldOf_ShouldFilterAdventurerInInsertionOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdventurerTest$describeTurnLeftOrRight.whenTurnLeft_move_ShouldDecreaseYPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The treasure map" />
       <extension name="coverage">
         <pattern>
@@ -110,25 +136,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.MapTest" />
-      <option name="METHOD_NAME" value="getFieldOf_ShouldFilterAdventurerInInsertionOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MoveHelperTest.whenAdvance_getNextOrientation_ShouldNotChangeOrientation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The treasure map" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.MoveHelperTest" />
-      <option name="METHOD_NAME" value="whenAdvance_getNextOrientation_ShouldNotChangeOrientation" />
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest$describeTurnLeftOrRight" />
+      <option name="METHOD_NAME" value="whenTurnLeft_move_ShouldDecreaseYPosition" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in The treasure map" />
-        <item itemvalue="JUnit.MapTest" />
-        <item itemvalue="JUnit.MapTest.getFieldAt_ShouldReturnFieldAtGivenPosition" />
-        <item itemvalue="JUnit.MapTest.getFieldOf_ShouldFilterAdventurerInInsertionOrder" />
-        <item itemvalue="JUnit.MoveHelperTest.whenAdvance_getNextOrientation_ShouldNotChangeOrientation" />
+        <item itemvalue="JUnit.AdventurerTest$describeSimulateAdventurerMovements.whenMultipleMoves_move_ShouldChangePositionAnCollectedTreasuresOfAdventurer" />
+        <item itemvalue="JUnit.AdventurerTest$describeTurnLeftOrRight" />
+        <item itemvalue="JUnit.AdventurerTest$describeTurnLeftOrRight.whenTurnLeft_move_ShouldChangeOrientation" />
+        <item itemvalue="JUnit.AdventurerTest$describeTurnLeftOrRight.whenTurnLeft_move_ShouldDecreaseYPosition" />
+        <item itemvalue="JUnit.AdventurerTest$describeAdvance.whenTreasure_move_ShouldMoveAndPickUpTreasure" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +164,7 @@
       <updated>1666252199198</updated>
       <workItem from="1666252205265" duration="8298000" />
       <workItem from="1666261399577" duration="4242000" />
-      <workItem from="1666280406298" duration="6145000" />
+      <workItem from="1666280406298" duration="9752000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit + MoveHelper unit tests">
       <created>1666284227433</created>
@@ -163,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666284227433</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Map unit tests">
+      <created>1666291368164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666291368164</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

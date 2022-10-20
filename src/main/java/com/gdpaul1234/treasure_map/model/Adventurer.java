@@ -35,6 +35,14 @@ public class Adventurer extends Field {
         return name;
     }
 
+    public Orientation getOrientation() {
+        return orientation;
+    }
+
+    public int getCollectedTreasure() {
+        return collectedTreasure;
+    }
+
     public void move() {
         Movement nextMove = this.moves.remove(0);
 

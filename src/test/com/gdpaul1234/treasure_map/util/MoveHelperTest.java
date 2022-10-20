@@ -8,8 +8,6 @@ import com.gdpaul1234.treasure_map.model.Mountain;
 import com.gdpaul1234.treasure_map.model.Treasure;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class MoveHelperTest {
@@ -48,7 +46,7 @@ class MoveHelperTest {
     }
 
     @Test
-    void whenAdventurer_canMove_ShoudReturnFalse() {
+    void whenAdventurer_canMove_ShouldReturnFalse() {
         var map = new Map(2, 2);
         map.addField(new Adventurer(1, 0, map,
                 "Paul", "N", "AADADAGGA"));
