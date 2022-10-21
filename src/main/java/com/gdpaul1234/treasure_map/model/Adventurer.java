@@ -4,6 +4,7 @@ import com.gdpaul1234.treasure_map.enums.Movement;
 import com.gdpaul1234.treasure_map.enums.Orientation;
 
 import java.text.MessageFormat;
+import java.util.Collections;
 import java.util.List;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -48,6 +49,10 @@ public class Adventurer extends Field {
 
     public int getRemainingMoves() {
         return this.moves.size();
+    }
+
+    public List<Movement> getMoves() {
+        return Collections.unmodifiableList(moves);
     }
 
     public void move() {
