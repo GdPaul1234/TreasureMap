@@ -1,5 +1,6 @@
 package com.gdpaul1234.treasure_map.model;
 
+import com.gdpaul1234.treasure_map.MapDumper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,8 +17,8 @@ class MapTest {
         map.addField(new Mountain(2, 2));
         map.addField(new Treasure(0, 3, 2));
         map.addField(new Treasure(1, 3, 1));
-        map.addField(new Adventurer(1, 1, map, "Indiana", "S", "AADADA"));
-        map.addField(new Adventurer(2, 0, map, "Lara", "S", "AADADAGGA"));
+        map.addField(new Adventurer(0, 2, map, "Indiana", "S", "AGAA"));
+        map.addField(new Adventurer(1, 2, map, "Lara", "E", "DA"));
     }
 
     @Test
@@ -36,8 +37,28 @@ class MapTest {
         assertInstanceOf(Treasure.class, t);
         assertEquals(2, ((Treasure) t).getNbTreasure());
 
-        var a = map.getFieldAt(2, 0);
+        var a = map.getFieldAt(1, 2);
         assertInstanceOf(Adventurer.class, a);
         assertEquals("Lara", ((Adventurer) a).getName());
+    }
+
+    @Test
+    void runSimulation_ShouldMoveAdventurers() {
+        map.runSimulation();
+
+        var expectedResult = """
+                C - 3 - 4
+                M - 1 - 1
+                M - 2 - 2
+                # {T comme Trésor} - {Axe horizontal} - {Axe vertical} - {Nb. de trésors
+                restants}
+                T - 0 - 3 - 1
+                # {A comme Aventurier} - {Nom de l’aventurier} - {Axe horizontal} - {Axe
+                vertical} - {Orientation} - {Nb. trésors ramassés}
+                A - Indiana - 2 - 3 - E - 1
+                A - Lara - 1 - 3 - S - 1
+                """;
+
+        assertEquals(expectedResult, new MapDumper(map).dump());
     }
 }

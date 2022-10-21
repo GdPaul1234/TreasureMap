@@ -47,6 +47,22 @@ public class Map {
         this.fields.add(field);
     }
 
+    public void runSimulation() {
+        List<Adventurer> adventurers = this.getFieldOf(Adventurer.class);
+        int maxMoves = adventurers.stream()
+                .map(Adventurer::getRemainingMoves)
+                .max(Integer::compareTo)
+                .orElse(0);
+
+        for (int i = 0; i < maxMoves; i++) {
+           for (var adventurer : adventurers) {
+               if (adventurer.getRemainingMoves() > 0) {
+                   adventurer.move();
+               }
+           }
+        }
+    }
+
     @Override
     public String toString() {
         return String.format("C - %d - %d", width, height);

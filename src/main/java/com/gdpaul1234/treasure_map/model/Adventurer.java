@@ -46,6 +46,10 @@ public class Adventurer extends Field {
         return collectedTreasure;
     }
 
+    public int getRemainingMoves() {
+        return this.moves.size();
+    }
+
     public void move() {
         Movement nextMove = this.moves.remove(0);
 
