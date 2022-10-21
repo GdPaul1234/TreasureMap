@@ -1,6 +1,7 @@
 package com.gdpaul1234.treasure_map.util;
 
 import com.gdpaul1234.treasure_map.model.Map;
+import com.gdpaul1234.treasure_map.model.Mountain;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
@@ -66,6 +67,27 @@ class ParserHelperTest {
 
             assertDoesNotThrow(
                     () -> ParserHelper.throwExceptionIfPositionNotValid(1, 1, 0, map));
+        }
+    }
+
+    @Nested
+    class describeThrowExceptionIfFieldIsNotEmpty {
+        @Test
+        void whenFieldIsNotEmpty_throwExceptionIfFieldIsNotEmpty_ShouldThrowException() {
+            var map = new Map(3, 4);
+            map.addField(new Mountain(1, 1));
+
+            assertThrows(IllegalArgumentException.class,
+                    () -> ParserHelper.throwExceptionIfFieldIsNotEmpty(1, 1, 0, map));
+        }
+
+        @Test
+        void whenFieldIsEmpty_throwExceptionIfFieldIsNotEmpty_ShouldNotThrowException() {
+            var map = new Map(3, 4);
+            map.addField(new Mountain(1, 1));
+
+            assertDoesNotThrow(
+                    () -> ParserHelper.throwExceptionIfFieldIsNotEmpty(1, 0, 0, map));
         }
     }
 }

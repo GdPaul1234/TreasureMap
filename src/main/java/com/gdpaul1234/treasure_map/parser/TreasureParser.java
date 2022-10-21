@@ -5,8 +5,7 @@ import com.gdpaul1234.treasure_map.model.Treasure;
 
 import java.util.regex.Matcher;
 
-import static com.gdpaul1234.treasure_map.util.ParserHelper.doParse;
-import static com.gdpaul1234.treasure_map.util.ParserHelper.throwExceptionIfPositionNotValid;
+import static com.gdpaul1234.treasure_map.util.ParserHelper.*;
 
 public class TreasureParser implements LineParser<Treasure> {
     private final Map map;
@@ -27,6 +26,8 @@ public class TreasureParser implements LineParser<Treasure> {
         var nbTreasure = Integer.parseInt(matcher.group(3));
 
         throwExceptionIfPositionNotValid(x, y, this.lineNumber, this.map);
+        throwExceptionIfFieldIsNotEmpty(x, y, this.lineNumber, this.map);
+
         if (nbTreasure < 0) {
             throw new IllegalArgumentException(String.format("nbTreasure is negative at line %d", this.lineNumber));
         }

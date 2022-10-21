@@ -5,8 +5,7 @@ import com.gdpaul1234.treasure_map.model.Map;
 
 import java.util.regex.Matcher;
 
-import static com.gdpaul1234.treasure_map.util.ParserHelper.doParse;
-import static com.gdpaul1234.treasure_map.util.ParserHelper.throwExceptionIfPositionNotValid;
+import static com.gdpaul1234.treasure_map.util.ParserHelper.*;
 
 public class AdventurerParser implements LineParser<Adventurer> {
     private final Map map;
@@ -32,6 +31,7 @@ public class AdventurerParser implements LineParser<Adventurer> {
         var moves = matcher.group(5);
 
         throwExceptionIfPositionNotValid(x, y, this.lineNumber, this.map);
+        throwExceptionIfFieldIsNotEmpty(x, y, this.lineNumber, this.map);
 
         return new Adventurer(x, y, map, name, orientation, moves);
     }

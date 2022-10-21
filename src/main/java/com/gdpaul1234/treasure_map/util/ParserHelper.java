@@ -25,4 +25,12 @@ public class ParserHelper {
             throw new IllegalArgumentException(String.format("Position out of bounds at line %d", lineNumber));
         }
     }
+
+    public static void throwExceptionIfFieldIsNotEmpty(int x, int y, int lineNumber, Map map) {
+        var field = map.getFieldAt(x, y);
+
+        if (field != null) {
+            throw new IllegalArgumentException(String.format("Field at %d-%d is not empty, see line %d", x, y, lineNumber));
+        }
+    }
 }

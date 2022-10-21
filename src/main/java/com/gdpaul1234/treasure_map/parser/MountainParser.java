@@ -5,8 +5,7 @@ import com.gdpaul1234.treasure_map.model.Mountain;
 
 import java.util.regex.Matcher;
 
-import static com.gdpaul1234.treasure_map.util.ParserHelper.doParse;
-import static com.gdpaul1234.treasure_map.util.ParserHelper.throwExceptionIfPositionNotValid;
+import static com.gdpaul1234.treasure_map.util.ParserHelper.*;
 
 public class MountainParser implements LineParser<Mountain> {
     private final Map map;
@@ -26,6 +25,7 @@ public class MountainParser implements LineParser<Mountain> {
         var y = Integer.parseInt(matcher.group(2));
 
         throwExceptionIfPositionNotValid(x, y, this.lineNumber, this.map);
+        throwExceptionIfFieldIsNotEmpty(x, y, this.lineNumber, this.map);
 
         return new Mountain(x, y);
     }
