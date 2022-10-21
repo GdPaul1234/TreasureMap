@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6e179f9-e1f7-476a-8d25-d644df5fa71e" name="Changes" comment="Adventurer and Treasure unit tests">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/samskivert_jmustache.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/MapDumper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/gdpaul1234/treasure_map/MapDumperTest.java" afterDir="false" />
+    <list default="true" id="d6e179f9-e1f7-476a-8d25-d644df5fa71e" name="Changes" comment="Refactor MoveHelperTest">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/parser/AdventurerParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/parser/LineParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/parser/MapParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/parser/MountainParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/parser/TreasureParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/util/ParserHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/gdpaul1234/treasure_map/util/ParserHelperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/The treasure map.iml" beforeDir="false" afterPath="$PROJECT_DIR$/The treasure map.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/SimulationDumper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Adventurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Adventurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdpaul1234/treasure_map/model/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,98 +64,98 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.gdpaul1234.treasure_map.util" />
       <recent name="com.gdpaul1234.treasure_map" />
       <recent name="com.gdpaul1234.treasure_map.model" />
-      <recent name="com.gdpaul1234.treasure_map.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MapDumperTest.dump_ShouldDumpSimulationResult">
-    <configuration name="AdventurerTest$describeSimulateAdventurerMovements.whenMultipleMoves_move_ShouldChangePositionAnCollectedTreasuresOfAdventurer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ParserHelperTest">
+    <configuration name="ParserHelperTest$describeDoParse$contextMatches.doParse_ShouldParseField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The treasure map" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.model.*" />
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest$describeSimulateAdventurerMovements" />
-      <option name="METHOD_NAME" value="whenMultipleMoves_move_ShouldChangePositionAnCollectedTreasuresOfAdventurer" />
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util.ParserHelperTest.describeDoParse" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.ParserHelperTest$describeDoParse$contextMatches" />
+      <option name="METHOD_NAME" value="doParse_ShouldParseField" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdventurerTest$describeTurnLeftOrRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParserHelperTest$describeThrowExceptionIfPositionNotValid.throwExceptionIfPositionNotValid_ShouldThrowExceptionIfPositionOutOfBound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The treasure map" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.model.*" />
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest$describeTurnLeftOrRight" />
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util.ParserHelperTest" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.ParserHelperTest$describeThrowExceptionIfPositionNotValid" />
+      <option name="METHOD_NAME" value="throwExceptionIfPositionNotValid_ShouldThrowExceptionIfPositionOutOfBound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParserHelperTest$describeThrowExceptionIfPositionNotValid.whenPositionIsInBound_throwExceptionIfPositionNotValid_ShouldNotThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The treasure map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util.ParserHelperTest" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.ParserHelperTest$describeThrowExceptionIfPositionNotValid" />
+      <option name="METHOD_NAME" value="whenPositionIsInBound_throwExceptionIfPositionNotValid_ShouldNotThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParserHelperTest$describeThrowExceptionIfPositionNotValid.whenPositionOutOfBound_throwExceptionIfPositionNotValid_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The treasure map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util.ParserHelperTest" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.ParserHelperTest$describeThrowExceptionIfPositionNotValid" />
+      <option name="METHOD_NAME" value="whenPositionOutOfBound_throwExceptionIfPositionNotValid_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParserHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The treasure map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gdpaul1234.treasure_map.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.util" />
+      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.util.ParserHelperTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdventurerTest$describeTurnLeftOrRight.whenTurnLeft_move_ShouldChangeOrientation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The treasure map" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest$describeTurnLeftOrRight" />
-      <option name="METHOD_NAME" value="whenTurnLeft_move_ShouldChangeOrientation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdventurerTest$describeTurnLeftOrRight.whenTurnLeft_move_ShouldDecreaseYPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The treasure map" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.model.AdventurerTest$describeTurnLeftOrRight" />
-      <option name="METHOD_NAME" value="whenTurnLeft_move_ShouldDecreaseYPosition" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapDumperTest.dump_ShouldDumpSimulationResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The treasure map" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gdpaul1234.treasure_map.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gdpaul1234.treasure_map" />
-      <option name="MAIN_CLASS_NAME" value="com.gdpaul1234.treasure_map.MapDumperTest" />
-      <option name="METHOD_NAME" value="dump_ShouldDumpSimulationResult" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MapDumperTest.dump_ShouldDumpSimulationResult" />
-        <item itemvalue="JUnit.AdventurerTest$describeSimulateAdventurerMovements.whenMultipleMoves_move_ShouldChangePositionAnCollectedTreasuresOfAdventurer" />
-        <item itemvalue="JUnit.AdventurerTest$describeTurnLeftOrRight" />
-        <item itemvalue="JUnit.AdventurerTest$describeTurnLeftOrRight.whenTurnLeft_move_ShouldChangeOrientation" />
-        <item itemvalue="JUnit.AdventurerTest$describeTurnLeftOrRight.whenTurnLeft_move_ShouldDecreaseYPosition" />
+        <item itemvalue="JUnit.ParserHelperTest" />
+        <item itemvalue="JUnit.ParserHelperTest$describeDoParse$contextMatches.doParse_ShouldParseField" />
+        <item itemvalue="JUnit.ParserHelperTest$describeThrowExceptionIfPositionNotValid.whenPositionIsInBound_throwExceptionIfPositionNotValid_ShouldNotThrowException" />
+        <item itemvalue="JUnit.ParserHelperTest$describeThrowExceptionIfPositionNotValid.whenPositionOutOfBound_throwExceptionIfPositionNotValid_ShouldThrowException" />
+        <item itemvalue="JUnit.ParserHelperTest$describeThrowExceptionIfPositionNotValid.throwExceptionIfPositionNotValid_ShouldThrowExceptionIfPositionOutOfBound" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +169,7 @@
       <updated>1666252199198</updated>
       <workItem from="1666252205265" duration="8298000" />
       <workItem from="1666261399577" duration="4242000" />
-      <workItem from="1666280406298" duration="16393000" />
+      <workItem from="1666280406298" duration="22124000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit + MoveHelper unit tests">
       <created>1666284227433</created>
@@ -191,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666295592912</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="MapDumper unit test">
+      <created>1666301810702</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666301810702</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactor MoveHelperTest">
+      <created>1666344725563</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666344725573</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +227,8 @@
     <MESSAGE value="Initial commit + MoveHelper unit tests" />
     <MESSAGE value="Map unit tests" />
     <MESSAGE value="Adventurer and Treasure unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adventurer and Treasure unit tests" />
+    <MESSAGE value="MapDumper unit test" />
+    <MESSAGE value="Refactor MoveHelperTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor MoveHelperTest" />
   </component>
 </project>
