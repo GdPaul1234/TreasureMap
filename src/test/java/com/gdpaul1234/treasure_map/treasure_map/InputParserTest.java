@@ -1,6 +1,9 @@
-package com.gdpaul1234.treasure_map;
+package com.gdpaul1234.treasure_map.treasure_map;
 
+import com.gdpaul1234.treasure_map.InputParser;
+import com.gdpaul1234.treasure_map.MapDumper;
 import com.gdpaul1234.treasure_map.model.Adventurer;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.stream.Collectors;
@@ -36,7 +39,7 @@ class InputParserTest {
                 vertical} - {Orientation} - {Nb. trésors ramassés}
                 A - Lara - 1 - 1 - S - 0
                 """;
-        assertEquals(expectedResult, new MapDumper(parsedMap).dump());
+        Assertions.assertEquals(expectedResult, new MapDumper(parsedMap).dump());
 
         var adventurer = (Adventurer) parsedMap.getFieldAt(1, 1);
         assertEquals("AADADAGGA",

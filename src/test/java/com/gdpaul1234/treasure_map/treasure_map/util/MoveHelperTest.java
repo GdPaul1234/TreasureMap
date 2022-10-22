@@ -1,4 +1,4 @@
-package com.gdpaul1234.treasure_map.util;
+package com.gdpaul1234.treasure_map.treasure_map.util;
 
 import com.gdpaul1234.treasure_map.enums.Movement;
 import com.gdpaul1234.treasure_map.enums.Orientation;
@@ -6,6 +6,8 @@ import com.gdpaul1234.treasure_map.model.Adventurer;
 import com.gdpaul1234.treasure_map.model.Map;
 import com.gdpaul1234.treasure_map.model.Mountain;
 import com.gdpaul1234.treasure_map.model.Treasure;
+import com.gdpaul1234.treasure_map.util.MoveHelper;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +18,7 @@ class MoveHelperTest {
     class describeGetDxAndDy {
         @Test
         void givenOrientation_getDx_ShouldReturnNextMove() {
-            assertEquals(-1, MoveHelper.getDx(Orientation.O));
+            Assertions.assertEquals(-1, MoveHelper.getDx(Orientation.O));
             assertEquals(1, MoveHelper.getDx(Orientation.E));
             assertEquals(0, MoveHelper.getDx(Orientation.N));
             assertEquals(0, MoveHelper.getDx(Orientation.S));

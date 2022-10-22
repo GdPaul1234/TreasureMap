@@ -1,5 +1,6 @@
-package com.gdpaul1234.treasure_map;
+package com.gdpaul1234.treasure_map.treasure_map;
 
+import com.gdpaul1234.treasure_map.MapDumper;
 import com.gdpaul1234.treasure_map.model.Adventurer;
 import com.gdpaul1234.treasure_map.model.Map;
 import com.gdpaul1234.treasure_map.model.Mountain;

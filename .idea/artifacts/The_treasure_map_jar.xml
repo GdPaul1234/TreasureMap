@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="The treasure map:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/The_treasure_map_jar</output-path>
+    <root id="archive" name="The treasure map.jar">
+      <element id="module-output" name="The treasure map" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/samskivert/jmustache/1.15/jmustache-1.15.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

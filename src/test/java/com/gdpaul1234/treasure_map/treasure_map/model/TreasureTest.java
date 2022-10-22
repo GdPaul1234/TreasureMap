@@ -1,5 +1,6 @@
-package com.gdpaul1234.treasure_map.model;
+package com.gdpaul1234.treasure_map.treasure_map.model;
 
+import com.gdpaul1234.treasure_map.model.Treasure;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

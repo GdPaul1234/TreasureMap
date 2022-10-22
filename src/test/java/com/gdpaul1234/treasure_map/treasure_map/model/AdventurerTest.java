@@ -1,6 +1,10 @@
-package com.gdpaul1234.treasure_map.model;
+package com.gdpaul1234.treasure_map.treasure_map.model;
 
 import com.gdpaul1234.treasure_map.enums.Orientation;
+import com.gdpaul1234.treasure_map.model.Adventurer;
+import com.gdpaul1234.treasure_map.model.Map;
+import com.gdpaul1234.treasure_map.model.Mountain;
+import com.gdpaul1234.treasure_map.model.Treasure;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

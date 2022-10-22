@@ -1,7 +1,8 @@
-package com.gdpaul1234.treasure_map.util;
+package com.gdpaul1234.treasure_map.treasure_map.util;
 
 import com.gdpaul1234.treasure_map.model.Map;
 import com.gdpaul1234.treasure_map.model.Mountain;
+import com.gdpaul1234.treasure_map.util.ParserHelper;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
