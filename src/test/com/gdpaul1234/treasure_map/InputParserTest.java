@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class InputParserTest {
 
@@ -42,5 +43,41 @@ class InputParserTest {
                 adventurer.getMoves().stream()
                         .map(Enum::toString)
                         .collect(Collectors.joining()));
+    }
+
+    @Test
+    void parse_ShouldIgnoreComment() {
+        var inputStream = Stream.of(
+                "# Un commentaire",
+                "C - 3 - 4",
+                "# Un autre commentaire");
+
+        var parsedMap = new InputParser(inputStream).parse();
+
+        assertEquals(3, parsedMap.getWidth());
+        assertEquals(4, parsedMap.getHeight());
+    }
+
+    @Test
+    void parse_ShouldIgnoreEmptyLine() {
+        var inputStream = Stream.of(
+                "",
+                "C - 3 - 4",
+                "");
+
+        var parsedMap = new InputParser(inputStream).parse();
+
+        assertEquals(3, parsedMap.getWidth());
+        assertEquals(4, parsedMap.getHeight());
+    }
+
+    @Test
+    void parse_ShouldThrowExceptionIfMalformedLine() {
+        var inputStream = Stream.of(
+                "C - Aie - 4 - Ouch"
+        );
+
+        assertThrows(IllegalArgumentException.class,
+                () -> new InputParser(inputStream).parse());
     }
 }
